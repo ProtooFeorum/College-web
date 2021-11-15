@@ -1,0 +1,57 @@
+html,body{
+ margin: 0;
+ padding: 0;
+ min-height: 2000px;
+}
+#header{
+    display: flex;
+    z-index: 10;
+    background-color: rgb(51, 51, 51);
+    height: 350px;
+    width: 100%;
+    position: fixed;
+     opacity: .85; /*Прозрачность добавить для уже уменьшенной шапки */
+     
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+nav{
+    display: block;
+    position: absolute;
+    width: 90%;
+    margin-top: 50px;
+    text-align: right;
+}
+ul{
+    display: inline;
+}
+li{
+    margin-left: 40px;
+    color: white;
+    font-family: Helvetica;
+    font-size: 25px;
+    display: inline;
+}
+a:hover,
+a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    display: flex;
+    height: 2000px; /*Почему-то не выводит при указывании в процентах, не могу понять в чём причина*/
+    width: 90%;
+    margin: auto;
+    background-color: rgb(31, 29, 29);
+}
+.smh{
+    display: flex;
+    border: solid rgb(228, 79, 79);
+    width: 300px;
+    height: 10%;
+    margin-top: 400px;
+    margin-left: 2%;
+}
