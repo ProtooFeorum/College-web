@@ -13,18 +13,23 @@ body{
 }
 #header{
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  padding: 30px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgb(46, 39, 39);
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+#header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 50%;
+    margin: 25px auto;
+    
 }
 #header.red{
-    height: max-content;
+    height: 100px;
 }
 #header #mainlogo{
     color: whitesmoke;
@@ -34,13 +39,12 @@ body{
 }
 #header ul{
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.5em; 
+    margin-left: 20px;
 }
 #header ul li{
  list-style: none;
- padding-left: 1em;   
+ margin-left: 10px; 
 }
 #header ul li a{
     color: whitesmoke;
@@ -56,6 +60,6 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
     padding: 10px;
-    margin-left: 5%;
+    margin-left: 30px;
 }
 

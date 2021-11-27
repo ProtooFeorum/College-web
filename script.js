@@ -1,3 +1,67 @@
+window.addEventListener("scroll", function(){
+    let scrollPos = this.window.scrollY;
+    if(scrollPos > 199){
+   header.classList.add('red');
+ } else{
+   header.classList.remove('red');  
+ }
+
+  console.log(scrollPos);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let userName = "Fiodor";
 // let age = 15.5;
 // let boo = true;
@@ -21,14 +85,3 @@
 
 // let sum = simpleMath(10, 23);
 // console.log(sum);
-
-window.addEventListener("scroll", function(){
-    let scrollPos = this.window.scrollY;
-    if(scrollPos > 199){
-   header.classList.add('red');
- } else{
-   header.classList.remove('red');  
- }
-
-  console.log(scrollPos);
-});
