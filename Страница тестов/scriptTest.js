@@ -1,4 +1,12 @@
-
+document.addEventListener("DOMContentLoaded", ready);
+function ready(){
+    document.getElementById('level_one').hidden = true;
+    document.getElementById('level_two').hidden = true;
+    document.getElementById('level_three').hidden = true;
+    document.getElementById('level_four').hidden = true;
+    document.getElementById('level_five').hidden = true;
+    document.getElementById('level_six').hidden = true;
+}
 const levels = document.querySelectorAll(".levels")
 const first = document.querySelector("#first_level")
 

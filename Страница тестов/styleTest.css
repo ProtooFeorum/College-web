@@ -126,7 +126,6 @@ body{
     font-size: 18px;
     padding-left: 30px;
     width: 780px;
-    transition: 0.5s all ease;
 }
 .test button{ /*Настройка кнопки в теме*/
   background-color:rgb(121, 165, 231);
