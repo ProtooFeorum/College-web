@@ -11,13 +11,20 @@ body{
 }
 
 #leftMenu{ /*Левый столб страницы*/
- position: absolute;
+ position: fixed;
  left: 0;
  width: 150px;
  height: 100%;
  margin-top: -18px; /*Чтобы на ровном месте не появлялся скролл*/
  background-color:rgb(99, 147, 221);
 }
+#rightMenu{ /*Правый столб страницы*/
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    margin-top: -18px; /*Чтобы на ровном месте не появлялся скролл*/
+   }
 #level_list{ /*Столб 6-ти уровней*/
     position: absolute;
     left: 250px;
@@ -43,6 +50,18 @@ body{
     align-items: center;
     justify-content: center;
     color: rgb(99, 147, 221);
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+.selected{
+    background-color: rgb(121, 165, 231);
+    color: white;
+    width: 70px;
+    height: 70px;
+}
+.levels:focus{
+    background-color: rgb(121, 165, 231);
+    color: white;
 }
 .levels_number{ /*Цифры внутри кружков*/
   font-size: 1.5em;
@@ -68,12 +87,15 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin: 18px auto;
     border-radius: 5px;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
-.test a{ /*Настрйка текста в теме*/
-    padding: 30px;
+.text{
+    display: block;
+    align-self: center;
     font-weight: bold;
     font-size: 18px;
+    padding-left: 30px;
+    width: 780px;
 }
 .test button{ /*Настройка кнопки в теме*/
   background-color:rgb(121, 165, 231);
@@ -84,6 +106,7 @@ body{
   cursor: pointer;
   transition: 0.5s all ease;
   font-size: 1.2em;
+  min-width: 158px;
 }
 .test button:hover{ /*Кнопка при наводке на неё*/
   background-color: rgb(26, 49, 85);  
