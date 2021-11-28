@@ -79,6 +79,7 @@ body{
     background-color: white;
     z-index: 1;
     opacity: 1;
+    
 }
 .selected{
     background-color: rgb(121, 165, 231);
@@ -106,6 +107,7 @@ body{
     width: 50%;
     min-width: 800px;
     margin: 0 10% 0 25%;
+    
 }
 .test{ /*Настройка самих тем*/
     display: flex;
@@ -115,6 +117,7 @@ body{
     margin: 18px auto;
     border-radius: 5px;
     justify-content: space-between; 
+    
 }
 .text{
     display: block;
@@ -123,6 +126,7 @@ body{
     font-size: 18px;
     padding-left: 30px;
     width: 780px;
+    transition: 0.5s all ease;
 }
 .test button{ /*Настройка кнопки в теме*/
   background-color:rgb(121, 165, 231);
